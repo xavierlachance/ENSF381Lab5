@@ -149,7 +149,7 @@ const subtractMatrices = function (matrix1, matrix2) {
 };
 const multiplyMatrices = (matrix1, matrix2) => { 
 	// provide the code
-    if((matrix1.length != matrix2[0].length) || (matrix1[0].length != matrix2.length)){
+    if(matrix1[0].length !== matrix2.length){
         return 0;
     }
     let result = [];
